@@ -12,12 +12,18 @@
     />
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn  -->
+    <script
+      src="https://kit.fontawesome.com/559fc67314.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- header section -->
     <header class="container mx-auto">
+      <!-- navbar -->
       <nav>
-        <div class="navbar bg-base-100">
+        <div class="navbar p-0 bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -47,7 +53,7 @@
                 <li class="hover:text-red-500"><a>Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-xl">Hockey'S</a>
+            <a class="btn text-3xl">Hockey'S</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal font-bold px-1">
@@ -58,11 +64,100 @@
               <li class="hover:text-red-500"><a>Contact</a></li>
             </ul>
           </div>
-          <div class="navbar-end">
-            <a class="btn">Get Ticket</a>
+          <div class="navbar-end flex gap-4">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a class="btn btn-error text-white">Get Ticket</a>
           </div>
         </div>
       </nav>
+      <!-- hero section -->
+      <section class="mt-8">
+        <div class="relative space-y-7">
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div
+                class="absolute left-5 right-5 bottom-5 flex -translate-y-1/2 transform gap-4"
+              >
+                <a
+                  href="#slide4"
+                  class="btn bg-slate-900 btn-circle text-white border-none"
+                  >❮</a
+                >
+                <a
+                  href="#slide2"
+                  class="btn bg-slate-900 btn-circle text-white border-none"
+                  >❯</a
+                >
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                class="w-full"
+              />
+              <div
+                class="absolute left-5 right-5 bottom-5 flex -translate-y-1/2 transform gap-4"
+              >
+                <a
+                  href="#slide1"
+                  class="btn bg-slate-900 btn-circle text-white border-none"
+                  >❮</a
+                >
+                <a
+                  href="#slide3"
+                  class="btn bg-slate-900 btn-circle text-white border-none"
+                  >❯</a
+                >
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                class="w-full"
+              />
+              <div
+                class="absolute left-5 right-5 bottom-5 flex -translate-y-1/2 transform gap-4"
+              >
+                <a
+                  href="#slide2"
+                  class="btn bg-slate-900 btn-circle text-white border-none"
+                  >❮</a
+                >
+                <a
+                  href="#slide4"
+                  class="btn bg-slate-900 btn-circle text-white border-none"
+                  >❯</a
+                >
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                class="w-full"
+              />
+              <div
+                class="absolute left-5 right-5 bottom-5 flex -translate-y-1/2 transform gap-4"
+              >
+                <a
+                  href="#slide3"
+                  class="btn bg-slate-900 btn-circle text-white border-none"
+                  >❮</a
+                >
+                <a
+                  href="#slide1"
+                  class="btn bg-slate-900 btn-circle text-white border-none"
+                  >❯</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="lg:absolute lg:right-5 lg:bottom-7 p-5 bg-slate-950 text-white space-y-4 lg:rounded-md md:w-1/3">
+            <h3 class="text-xl">Meet all the heroes from the field</h3>
+            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          </div>
+        </div>
+      </section>
     </header>
     <!-- main section -->
     <main></main>
